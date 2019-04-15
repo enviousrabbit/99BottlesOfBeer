@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+/*
+
+99 bottles of beer on the wall, 99 bottles of beer.
+Take one down, pass it around, 98 bottles of beer on the wall... 
+
+ */
+
+
+
+int main()
+{
+  
+  return 0;
+}
+
+void print99BottlesOfBeer(){
+const std::string phrase1Part1 = " bottles of beer on the wall, ";
+//int
+const std::string phrase1Part2 = " bottles of beer.\n"
+"Take one down, pass it around, ";
+//int
+const std::string phrase1Part3 = " bottles of beer on the wall...\n";
+
+ const std::string phrase2 = "No more bottles of beer on the wall, no more bottles of beer.\n"
+   "Go to the store and buy some more,"; 
+ 
+ for(int i = 99; i >= 0; i--){
+   if(i > 0){
+     std::cout << i << phrase1Part1 << i << phrase1Part2
+	       << '\n' << phrase1Part3;
+    
+   }
+   else{
+     std::cout << phrase2;
+   }
+ }
+
+}
